@@ -27,6 +27,7 @@ public class Author {
         Author author = (Author) o;
         return name.equals(author.getName()) && surname.equals(author.getSurname());
 
+
     }
 
 }
