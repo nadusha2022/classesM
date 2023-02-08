@@ -7,7 +7,6 @@ public class Main {
         System.out.println(Tolstoy.equals(Tolstoy2));
 
 
-
         Book prorok = new Book("Пророк", 1828, Pushkin);
         Book warANDPeace = new Book("Война и мир", 1873, Tolstoy);
 
@@ -19,6 +18,10 @@ public class Main {
 
         System.out.println(prorok.hashCode());
         System.out.println(warANDPeace.hashCode());
+
+
+
+
 
 
 
