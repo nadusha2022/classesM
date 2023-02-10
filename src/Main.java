@@ -5,6 +5,7 @@ public class Main {
         Author Tolstoy2 = new Author("Лев", "Толстой");
 
         System.out.println(Tolstoy.equals(Tolstoy2));
+        System.out.println(Tolstoy);
 
 
         Book prorok = new Book("Пророк", 1828, Pushkin);
@@ -15,9 +16,22 @@ public class Main {
 
         prorok.setPublishingYear(1828);
         System.out.println(prorok);
+        System.out.println(prorok);
 
         System.out.println(prorok.hashCode());
         System.out.println(warANDPeace.hashCode());
+
+        System.out.println(Tolstoy.hashCode());
+        System.out.println(Tolstoy2.hashCode());
+
+
+
+
+
+
+
+
+
 
 
 
