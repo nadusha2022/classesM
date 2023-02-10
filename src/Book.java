@@ -40,11 +40,23 @@ public class Book {
         return "Название книги: " + title + ",год издания: " + publishingYear + ", автор: " + author;
 
     }
+
     @Override
-    public int hashCode(){
-       return Objects.hash(title, publishingYear,author);
+    public int hashCode() {
+        return Objects.hash(title, publishingYear, author);
+    }
 
-
+    @Override
+    public boolean equals(Object o) {
+        if (o == this) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Book book = (Book) o;
+        return publishingYear == book.publishingYear && Objects.equals(title,book.title) &&
+                Objects.equals(author,book.author);
     }
 }
 
